@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM/ram_top_demo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM/ram_control_demo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM/my_ram.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO12/RAM/ram_demo_tf.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ram_demo_tf
+
+add wave *
+view structure
+view signals
+run -all

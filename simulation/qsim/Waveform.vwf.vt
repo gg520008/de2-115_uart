@@ -1,0 +1,211 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "07/24/2017 13:35:26"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    diven
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module diven_vlg_sample_tst(
+	clk,
+	en1,
+	rst_n,
+	sampler_tx
+);
+input  clk;
+input  en1;
+input  rst_n;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or en1 or rst_n)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module diven_vlg_check_tst (
+	diven,
+	sampler_rx
+);
+input  diven;
+input sampler_rx;
+
+reg  diven_expected;
+
+reg  diven_prev;
+
+reg  diven_expected_prev;
+
+reg  last_diven_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	diven_prev = diven;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	diven_expected_prev = diven_expected;
+end
+
+
+
+// expected diven
+initial
+begin
+	diven_expected = 1'bX;
+end 
+// generate trigger
+always @(diven_expected or diven)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected diven = %b | ",diven_expected_prev);
+	$display("| real diven = %b | ",diven_prev);
+`endif
+	if (
+		( diven_expected_prev !== 1'bx ) && ( diven_prev !== diven_expected_prev )
+		&& ((diven_expected_prev !== last_diven_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port diven :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", diven_expected_prev);
+		$display ("     Real value = %b", diven_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_diven_exp = diven_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module diven_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg en1;
+reg rst_n;
+// wires                                               
+wire diven;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+diven i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.diven(diven),
+	.en1(en1),
+	.rst_n(rst_n)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #2500 1'b1;
+	#2500;
+end 
+
+// rst_n
+initial
+begin
+	rst_n = 1'b0;
+	rst_n = #30000 1'b1;
+end 
+
+// en1
+always
+begin
+	en1 = 1'b0;
+	en1 = #12500 1'b1;
+	#12500;
+end 
+
+diven_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.en1(en1),
+	.rst_n(rst_n),
+	.sampler_tx(sampler)
+);
+
+diven_vlg_check_tst tb_out(
+	.diven(diven),
+	.sampler_rx(sampler)
+);
+endmodule
+

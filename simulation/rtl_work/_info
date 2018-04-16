@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\user\Documents\Fpga\WORKPLACE\DE2_115_RS232FIFO14\simulation
+vcontr_fifo_rec_ram
+INB9?6d9__D=TGBJaVKf9o2
+V2gDRN9VN<XC0>2BY0jN=>0
+Z1 dC:\Users\user\Documents\Fpga\WORKPLACE\DE2_115_RS232FIFO14\simulation
+w1523697124
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_rec_ram.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_rec_ram.v
+L0 2
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO -O0
+!i10b 1
+!s100 ]B<=VKCELAhHIZ?zlaNUE1
+!s85 0
+!s108 1523778426.035000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_rec_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_rec_ram.v|
+!s101 -O0
+vcontr_fifo_send_ram
+I6[5ChI2HbGkM7YHF?lnjb2
+VHGXmo=:[l932XQTn?zJ861
+R1
+w1523775615
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 iPg<GeGJ=X_a_FobL7gU<1
+!s85 0
+!s108 1523778425.910000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v|
+!s101 -O0
+vmy_fifo
+I95e?cLi3;DEY8`RjU`5Sn3
+VQndE5EPhL_1o`H?lGC=7L3
+R1
+w1523601021
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/my_fifo.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/my_fifo.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Lk8>KABjMe6VWTQTkgL6S2
+!s85 0
+!s108 1523778426.273000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/my_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/my_fifo.v|
+!s101 -O0
+vmy_ram
+IM1ZDB8lnHDhDg_=IQ8adc2
+VXdlZ_OIkH^MNW>48DUY2C2
+R1
+w1523600576
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 :`LdGQMnNfj_DXDi>FdIY3
+!s85 0
+!s108 1523778426.154000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM -O0
+vrec
+IoA5HTNi`nFe1;6L8`heEU0
+V;KinlY1ciT7?6TYgk;kTL0
+R1
+w1523361843
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/rec.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/rec.v
+L0 5
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART -O0
+!i10b 1
+!s100 _^BdGVe_]9FPOoz=HP=jS3
+!s85 0
+!s108 1523778426.492000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/rec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/rec.v|
+!s101 -O0
+vsend
+INQAGk;0VTmPel@7f=SzdK0
+V?`h_52B^NdBoZ=CQ?@G^Q2
+R1
+w1523359560
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/send.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/send.v
+L0 6
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 h:DlcYJnZZebXVkhk>bjW3
+!s85 0
+!s108 1523778426.384000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/send.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/send.v|
+!s101 -O0
+vuart_top
+!i10b 1
+!s100 b_29j7TEbM6maM@izWKP>3
+IYA;WTz0>:?YGRn0UP[?=@0
+VAGLXQfX;g3U];m7z8EKmK3
+R1
+w1523779011
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1523779052.167000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main|-O0|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v|
+!s101 -O0
+R3
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main -O0
+vuart_top_tf
+IDf1S0J?P:W^6KoCJJlkOj3
+V;3575SQRNSX8obRW=A@9@2
+R1
+w1523671742
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top_tf.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top_tf.v
+L0 5
+R2
+r1
+31
+R3
+R6
+!i10b 1
+!s100 RO@1F@Qmcg>PQ1dCRW4lD3
+!s85 0
+!s108 1523778426.742000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top_tf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top_tf.v|
+!s101 -O0

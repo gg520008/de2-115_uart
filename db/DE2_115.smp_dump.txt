@@ -1,0 +1,24 @@
+
+State Machine - |DE2_115|uart_top:uart_top|contr_fifo_send_ram:contr_fifo_send_ram|state
+Name state.00 state.10 state.01 
+state.00 0 0 0 
+state.01 1 0 1 
+state.10 1 1 0 
+
+State Machine - |DE2_115|uart_top:uart_top|contr_fifo_send_ram:contr_fifo_send_ram|state2
+Name state2.wtran state2.wwtran state2.wwrite state2.00 
+state2.00 0 0 0 0 
+state2.wwrite 0 0 1 1 
+state2.wwtran 0 1 0 1 
+state2.wtran 1 0 0 1 
+
+State Machine - |DE2_115|uart_top:uart_top|contr_fifo_rec_ram:contr_fifo_rec_ram|state2
+Name state2.wwrite 
+state2.rfree 0 
+state2.wwrite 1 
+
+State Machine - |DE2_115|uart_top:uart_top|contr_fifo_rec_ram:contr_fifo_rec_ram|state1
+Name state1.free state1.wat state1.write 
+state1.free 0 0 0 
+state1.write 1 0 1 
+state1.wat 1 1 0 

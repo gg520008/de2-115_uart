@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\user\Documents\Fpga\WORKPLACE\DE2_115_RS232FIFO9\simulation\qsim
+vclk_generator
+!i10b 1
+!s100 f9??^eP>:>X`>67_a8T:L2
+ID<oLDem2Xm8CmoQUm9KIT3
+VQ`oXGWaS=TDJ;D>5]M^hL0
+Z1 dC:\Users\user\Documents\Fpga\WORKPLACE\DE2_115_RS232FIFO9\simulation\qsim
+w1300955510
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/clk_generator.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/clk_generator.v
+L0 14
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1523444530.185000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/clk_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/clk_generator.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 -O0
+vfifo_read_write
+I8o_J67kA`P7GDdTM1@mDd1
+VEW18]F8fRQVJ=48PlIgkD0
+R1
+w1300952444
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_read_write.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_read_write.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 e2mc7c>Ql<X653R`iKIM02
+!s85 0
+!s108 1523444529.967000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_read_write.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_read_write.v|
+!s101 -O0
+vfifo_uart
+I2fJh;2e0EV9R_4IeE2IC91
+VcYKd]@QfQ[nUVo2Hfb>i=1
+R1
+w1300952786
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_uart.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_uart.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 h^Z?B3l5YGck>]0:Q2oo01
+!s85 0
+!s108 1523444529.765000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_uart.v|
+!s101 -O0
+vkey_scan
+ISZzXAe6:Bc7N?f7:<M[l<2
+VnRGk7mK9:6SVY6ne:lX:42
+R1
+w1300952274
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/key_scan.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/key_scan.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Zn`S_Hn71E9a1FFd[Qd0k1
+!s85 0
+!s108 1523444529.649000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/key_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/key_scan.v|
+!s101 -O0
+vsystem_ctrl
+ID=Vg`ON@ICe4UY`i@>aKO2
+VaZ9QDne<dYbgnZo2D3=ER2
+R1
+Z5 w1300951320
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/system_ctrl.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/system_ctrl.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Tci;eSMMRm0Kk7ic6V]h]1
+!s85 0
+!s108 1523444529.543000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/system_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/system_ctrl.v|
+!s101 -O0
+vuart_fifo_design
+IQeE;jMo;fmdOl?3:Xa=Lj0
+V9S3XFlk4`_=DBhcaNTdk>1
+R1
+w1309332382
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_fifo_design.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_fifo_design.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;kKJ3XcZlTNK4LKE_K<622
+!s85 0
+!s108 1523444529.433000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_fifo_design.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_fifo_design.v|
+!s101 -O0
+vuart_receiver
+IA^[_oc?R[P0j7[CcMDW`I2
+VeCMBQL9;:GVdKg0hl8CMh3
+R1
+R5
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_receiver.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_receiver.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 XK4>8be5h200fzRn_emPQ3
+!s85 0
+!s108 1523444529.322000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_receiver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_receiver.v|
+!s101 -O0
+vuart_transfer
+I=be4[4@Mf;lP]dg@K;k?e0
+V9n=_GO2U2a5g6odWMg6003
+R1
+R5
+8C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_transfer.v
+FC:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_transfer.v
+L0 8
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 5QR@l=Q@aC3=nJJf6WPIf2
+!s85 0
+!s108 1523444529.127000
+!s107 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_transfer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10|C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_transfer.v|
+!s101 -O0

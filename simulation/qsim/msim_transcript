@@ -1,0 +1,62 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do DE2_115_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_transfer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_transfer
+# 
+# Top level modules:
+# 	uart_transfer
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_receiver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_receiver
+# 
+# Top level modules:
+# 	uart_receiver
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/uart_fifo_design.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_fifo_design
+# 
+# Top level modules:
+# 	uart_fifo_design
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/system_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module system_ctrl
+# 
+# Top level modules:
+# 	system_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/key_scan.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_scan
+# 
+# Top level modules:
+# 	key_scan
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_uart.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_uart
+# 
+# Top level modules:
+# 	fifo_uart
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/fifo_read_write.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_read_write
+# 
+# Top level modules:
+# 	fifo_read_write
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10 {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO10/clk_generator.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_generator
+# 
+# Top level modules:
+# 	clk_generator
+# 

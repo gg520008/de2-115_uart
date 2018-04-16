@@ -1,0 +1,132 @@
+/********************uart_test*************************
+**模块名称：uart_test
+**功能描述：uart的测试顶层模块
+**************************************************/
+module uart_top(
+				clock,					//系统时钟
+				RXD,
+				TXD,					//uart接收与发送引脚
+				rst_n,
+			Data0,
+			Data1,
+			Data2,
+			Data3,
+			Data4,
+		Data5 ,
+Data6 ,
+Data7 ,
+Data8 ,
+Data9 ,
+Data10 ,
+gpio,
+			view
+				);
+input clock;					 		//系统时钟(48MHz)
+input RXD;								//uart接收引脚
+input rst_n;
+output TXD;							//uart发送引脚
+wire [7:0] senddata;						//发送一个字节的数据缓存区
+wire [7:0] recdata;						//接收缓存区
+wire RI,TI,WR;	//接收、发送中断以及写控制信号								
+wire clksend,clkrec;					//发送和接收的时钟频率
+wire full,winc,rinc;
+wire empty;
+wire [7:0] rdata;
+wire en;
+wire pulse1start;
+wire [31:0]pulse1end;
+output [7:0]Data0 ;
+output [7:0]Data1 ;
+output [7:0]Data2 ;
+output [7:0]Data3 ;
+output [7:0]Data4 ;
+output [7:0]Data5 ;
+output [7:0]Data6 ;
+output [7:0]Data7 ;
+output [7:0]Data8 ;
+output [7:0]Data9 ;
+output [7:0]Data10 ;
+output [5:0]gpio;
+
+output [7:0]view;
+control_fifo fifocontrol(
+								 .rst_n(rst_n),
+								 .clock(clock),
+								 .full(full),
+								 .empty(empty),
+								 .winc(winc),
+								 .rinc(rinc),
+								 .en(en),
+								 .WR(WR),
+								 .TI(TI)
+								 );
+fifo fifo1(
+           .rdata(senddata),
+           .full(full), //
+			  .empty(empty), //
+			  .wdata(recdata),
+			  .winc(winc),// 
+			  .wclk(clock), 
+			   .rinc(rinc), //
+			  .rclk(clock), 
+			   .rst_n(rst_n)
+			 );
+rec  uartrec(							//实例化一个uart接收模块
+            .rst_n(rst_n),
+            .clk(clock),
+            .clkout(clkrec),
+            .Dataout(recdata),
+            .RXD(RXD),
+				.en(en)
+            );			
+send   uartsend(						//实例化一个uart发送模块
+               .rst_n(rst_n),
+              .clk(clock),
+              .clkout(clksend),
+              .Datain(senddata),
+			 //.Datain(pulse1end),
+              //.TXD(TXD),
+              .TI(TI),
+             .WR(WR),
+			 			.Data0(Data0),
+			.Data1(Data1),
+			.Data2(Data2),
+			.Data3(Data3),
+			.Data4(Data4),
+					.Data5(Data5) ,
+.Data6(Data6) ,
+.Data7 (Data7),
+.Data8(Data8) ,
+.Data9 (Data9),
+.Data10 (Data10),
+              );
+
+ReceiveProcess ReceiveProcess(.clock(clock),.rst_n(rst_n),.Data0(Data0),.Data1(Data1),.Data2(Data2),.Data3(Data3),.Data4(Data4),.Data5(Data5) ,
+.Data6(Data6) ,
+.Data7 (Data7),
+.Data8(Data8) ,
+.Data9 (Data9),
+.Data10 (Data10),.pulse1start(pulse1start),.pulse1end(pulse1end));
+
+////////////copy///
+send_uart send_uart(.clk(clock),
+					.rst_n(rst_n),
+					.rs232_tx(TXD),
+					.tx_data(pulse1end),
+						.tx_int(WR));
+//module send_uart(clk,rst_n,rs232_tx,tx_data,tx_int);
+
+SinglePulseGene SinglePulseGene(.clk(clock),.rst_n(rst_n),.pulse1start(pulse1start),.pulse1end(pulse1end),.startclock(en),.gpio(gpio));
+
+assign view[7:0] = pulse1end;
+
+			 // module ReceiveProcess(clock,rst_n,Data0,Data1,Data2,Data3,Data4,pulse1start,pulse1end);
+endmodule
+
+
+
+
+
+
+
+

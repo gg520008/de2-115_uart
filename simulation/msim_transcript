@@ -1,0 +1,150 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE2_115_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module contr_fifo_send_ram
+# 
+# Top level modules:
+# 	contr_fifo_send_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_rec_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module contr_fifo_rec_ram
+# 
+# Top level modules:
+# 	contr_fifo_rec_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module my_ram
+# 
+# Top level modules:
+# 	my_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/my_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module my_fifo
+# 
+# Top level modules:
+# 	my_fifo
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/send.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module send
+# 
+# Top level modules:
+# 	send
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/UART/rec.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rec
+# 
+# Top level modules:
+# 	rec
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main {C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top_tf.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_top_tf
+# 
+# Top level modules:
+# 	uart_top_tf
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_top_tf
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps uart_top_tf 
+# Loading work.uart_top_tf
+# Loading work.uart_top
+# Loading work.rec
+# Loading work.my_fifo
+# Loading altera_mf_ver.dcfifo
+# Loading altera_mf_ver.dcfifo_mixed_widths
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.dcfifo_low_latency
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
+# Loading altera_mf_ver.dcfifo_dffpipe
+# Loading work.my_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.contr_fifo_rec_ram
+# Loading work.send
+# Loading work.contr_fifo_send_ram
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /uart_top_tf/uart_top/my_ram_rec
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Missing connection for port 'q'.
+# 
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /uart_top_tf/uart_top/contr_fifo_rec_ram
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Missing connection for port 'data'.
+# 
+# ** Warning: (vsim-3015) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(137): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v(40).
+# 
+#         Region: /uart_top_tf/uart_top/my_ram_send
+# ** Warning: (vsim-3015) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(151): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'addr'. The port definition is at: C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v(13).
+# 
+#         Region: /uart_top_tf/uart_top/contr_fifo_send_ram
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+restart -f
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /uart_top_tf/uart_top/my_ram_rec
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Missing connection for port 'q'.
+# 
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /uart_top_tf/uart_top/contr_fifo_rec_ram
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Missing connection for port 'data'.
+# 
+# ** Warning: (vsim-3015) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(137): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/RAM/my_ram.v(40).
+# 
+#         Region: /uart_top_tf/uart_top/my_ram_send
+# ** Warning: (vsim-3015) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(151): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'addr'. The port definition is at: C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/FIFO/contr_fifo_send_ram.v(13).
+# 
+#         Region: /uart_top_tf/uart_top/contr_fifo_send_ram
+add wave -position insertpoint sim:/uart_top_tf/*
+add wave -position insertpoint sim:/uart_top_tf/uart_top/*
+add wave -position insertpoint sim:/uart_top_tf/uart_top/contr_fifo_send_ram/*
+add wave -position insertpoint sim:/uart_top_tf/uart_top/my_ram_send/*
+add wave -position insertpoint sim:/uart_top_tf/uart_top/uartsend/*
+run 20ms
+add wave -position insertpoint sim:/uart_top_tf/uart_top/my_ram_rec/*
+add wave -position insertpoint sim:/uart_top_tf/uart_top/contr_fifo_rec_ram/*
+vlog -vlog01compat -work work +incdir+C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main -O0 C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+restart -f
+# Loading work.uart_top
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /uart_top_tf/uart_top/my_ram_rec
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(83): [TFMPC] - Missing connection for port 'q'.
+# 
+# ** Warning: (vsim-3017) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /uart_top_tf/uart_top/contr_fifo_rec_ram
+# ** Warning: (vsim-3722) C:/Users/user/Documents/Fpga/WORKPLACE/DE2_115_RS232FIFO14/main/uart_top.v(97): [TFMPC] - Missing connection for port 'data'.
+# 
+# A time value could not be extracted from the current line
+run 20ms

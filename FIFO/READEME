@@ -1,0 +1,3 @@
+my_fifo* fifo ip核文件，8bit*16words
+rd_fifo wr_fifo fifo 读写模块
+fifo_top_demo 顶层连接模块

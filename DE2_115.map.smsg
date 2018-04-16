@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at contr_fifo_send_ram.v(47): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at contr_fifo_send_ram.v(165): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at contr_fifo_send_ram.v(19): object "ti" differs only in case from object "TI" in the same scope
+Warning (10268): Verilog HDL information at contr_fifo_rec_ram.v(133): always construct contains both blocking and non-blocking assignments
